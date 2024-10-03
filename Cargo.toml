@@ -1,0 +1,15 @@
+[package]
+name = "eurorust2024-deno-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+deno_ast = { version = "0.42", features = ["transpiling"] }
+deno_core = "0.311"
+deno_runtime = "0.178"
+serde = { version = "1", features = ["derive"] }
+thiserror = "1"
+# deno_runtime depends on a specific minor release of tokio,
+# so we just specify "1" to get a compatible one
+tokio = { version = "1", features = ["full"] }
