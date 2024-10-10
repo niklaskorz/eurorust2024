@@ -7,7 +7,7 @@ edition = "2021"
 anyhow = "1"
 deno_ast = { version = "0.42", features = ["transpiling"] }
 deno_core = "0.311"
-deno_runtime = "0.178"
+deno_runtime = "0.180"
 serde = { version = "1", features = ["derive"] }
 thiserror = "1"
 # deno_runtime depends on a specific minor release of tokio,
