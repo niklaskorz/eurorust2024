@@ -8,5 +8,5 @@ Deno provides certain [security mechanisms](https://docs.deno.com/runtime/fundam
 restrict access to the network, file system, and other functionalities.
 These can be configured as part of the runtime worker.
 
-The demo can be run as `cargo run -- <script_file> [<function_name>]`, where the optional `function_name` defaults to the scripts `default` export.
+The demo can be run as `cargo run -- <script_file> [<function_name>]`, where the optional `function_name` defaults to the script's `default` export.
 

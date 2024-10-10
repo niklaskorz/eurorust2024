@@ -36,7 +36,7 @@ impl ModuleLoader for TypescriptModuleLoader {
     ) -> Result<ModuleSpecifier> {
         if specifier.starts_with(INTERNAL_MODULE_PREFIX) {
             let mut path_str = specifier.replace(INTERNAL_MODULE_PREFIX, "./builtins/");
-            // For module specifiers starting with out builtin prefix, we automatically add the ".ts"
+            // For module specifiers starting with our "builtin" prefix, we automatically add the ".ts"
             // extension.
             // By default, Deno requires specifying the full file name including file extensions.
             path_str.push_str(".ts");
